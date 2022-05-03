@@ -1,0 +1,26 @@
+<meta charset="UTF-8"> 
+<script>
+
+	const numeroPensado = 4
+	let tentativas = 0
+	let acertou = false;
+
+	while (tentativas < 3) {
+
+		let chute = parseInt(prompt ("Tente adivinhar o número que estou pensando"));
+
+		if(numeroPensado == chute) {
+			alert(`Parabéns! Você acertou, o número pensado foi: ${numeroPensado} `);
+			acertou = true;
+			break;
+		}else{
+			alert ("Você errou!");
+		}
+		tentativas++
+	}
+
+	if (tentativas = 2 && acertou == false) {
+		alert ("O número era 4");
+	} 
+
+</script>
