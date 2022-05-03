@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script>
+
+	const area = prompt ("Você deseja seguir a área de Front-End (digite 1) ou Back-End? (digite 2)")
+
+	if (area == 1) {
+		prompt ("Pretende aprender React (1) ou Vue? (2)");
+	}else if (area == 2) {
+		prompt ("Pretende aprender C# (1) ou Java (2)?");
+	}
+
+	const especializacaoDevOuFull = prompt ("Pretende seguir se especializando em sua área escolhida (1), ou se desenvolver para se tornar Full-Stack? (2)");
+
+	if (especializacaoDevOuFull == 1) {
+		alert ("Ótimo, voce preferiu se especializar!");
+	}else if(especializacaoDevOuFull == 2) {
+		alert ("Legal, você pode se tornar um Dev Full-Stack!");
+	}
+
+	let linguagensAAprender = prompt ("Tem mais alguma linguagem que gostaria de aprender? Digite 'ok' caso positivo ou 'não' caso negativo.");
+	while (linguagensAAprender === "ok") {
+
+		let novaLinguagem = prompt ("Digite a linguagem que gostaria de aprender");
+
+		alert (`${novaLinguagem} é muito legal! Siga com os estudos.`)
+		linguagensAAprender = prompt ("Tem mais alguma linguagem que gostaria de aprender? Digite 'ok' caso positivo ou 'não' caso negativo.");
+	}
+
+</script>
