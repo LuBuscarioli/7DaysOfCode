@@ -1,7 +1,7 @@
 <meta charset="UTF-8"> 
 <script>
 
-	const numeroPensado = 4
+	let numeroPensado = Math.round(Math.random () *10);
 	let tentativas = 0
 	let acertou = false;
 
@@ -20,7 +20,7 @@
 	}
 
 	if (tentativas = 2 && acertou == false) {
-		alert ("O número era 4");
+		alert (`O número era ${numeroPensado}`);
 	} 
 
 </script>
