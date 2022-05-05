@@ -2,54 +2,44 @@
 <script>
 	//let meuArray = [];   meuArray.push(elemento1);
 
-	let adicionarItem = prompt ("Deseja adicionar um ítem na sua lista de compras? Digite 'sim' ou 'não'.");
 	let listaFrutas = [];
 	let listaLaticinios = [];
 	let listaCongelados = [];
 	let listaDoces = [];
+	let adicionarItem = "sim";
 
-	//function loopLista () {
 
-		if (adicionarItem == "sim") {
+	while (adicionarItem == "sim") {
+
+		let adicionarItem = prompt ("Deseja adicionar um ítem na sua lista de compras? Digite 'sim' ou 'não'.");
+
+		if (adicionarItem == "não") {
+			console.log("Obrigado.");
+			break;
+		}
 
 		let item = prompt("Qual comida deseja inserir?");
 
 		let categoriaItem = prompt("Em qual categoria esse ítem se encaixa? Frutas, laticínios, congelados ou doces?");
 
-			if (categoriaItem == "frutas") {
-				listaFrutas.push(item);
-				console.log ("Frutas: " + listaFrutas);
+		if (categoriaItem == "frutas") {
+			listaFrutas.push(item);
+			console.log ("Frutas: " + listaFrutas);
 
-			}else if(categoriaItem == "laticínios") {
-				listaLaticinios.push (item);
-				console.log ("Laticínios: " + listaLaticinios);
+		}else if(categoriaItem == "laticínios") {
+			listaLaticinios.push (item);
+			console.log ("Laticínios: " + listaLaticinios);
 
-			}else if(categoriaItem == "congelados") {
-				listaCongelados.push (item);
-				console.log ("Congelados: " + listaCongelados);
+		}else if(categoriaItem == "congelados") {
+			listaCongelados.push (item);
+			console.log ("Congelados: " + listaCongelados);
 
-			}else if(categoriaItem == "doces") {
-				listaDoces.push (item);
-				console.log ("Doces: " + listaDoces);
-			}
-
-		}else if(adicionarItem == "não"){
-			console.log("Obrigado.");
+		}else if(categoriaItem == "doces") {
+			listaDoces.push (item);
+			console.log ("Doces: " + listaDoces);
 		}
 
-			//let continuarAdicionando = prompt("Deseja adicionar mais ítens? (sim ou não)");
-
-			//if (continuarAdicionando == "não") {
-				//adicionarItem == "não"
-			//}else if(continuarAdicionando =="sim") {
-				//adicionarItem == "sim"
-			//}
-	//}
-
-	//while (adicionarItem =="sim") {
-	//	loopLista();
-	//}
-	
+	}	
 
 </script>
 </html>
