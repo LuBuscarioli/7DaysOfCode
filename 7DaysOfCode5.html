@@ -8,7 +8,7 @@
 	let listaCongelados = [];
 	let listaDoces = [];
 	let adicionarItem = "sim";
-
+	let removerItem = "não";
 
 	while (adicionarItem == "sim") {
 
@@ -23,6 +23,7 @@
 
 		let categoriaItem = prompt("Em qual categoria esse ítem se encaixa? Frutas, laticínios, congelados ou doces?");
 
+
 		if (categoriaItem == "frutas") {
 			listaFrutas.push(item);
 			
@@ -36,12 +37,22 @@
 			listaDoces.push (item);
 		}
 
+		let removerItem = prompt ("Se quiser remover um item, digite 'sim', caso contrário digite 'não'.");
+
+//remoção de ítens 
+
+		if (removerItem == "sim") {
+
+			alert(`Lista de compras\n Frutas: ${listaFrutas}\n Laticínios: ${listaLaticinios}\n Congelados: ${listaCongelados}\n Doces: ${listaDoces}`);
+
+			let itemASerRemovido = prompt ("Digite o ítem que deseja remover da lista.");
+			let buscaItemASerRemovido = listaFrutas.includes(itemASerRemovido);
+			alert (itemASerRemovido);
+		}
+
 	}	
 
-console.log ("Frutas: " + listaFrutas);
-console.log ("Laticínios: " + listaLaticinios);
-console.log ("Congelados: " + listaCongelados);
-console.log ("Doces: " + listaDoces);
+	alert(`Lista de compras\n Frutas: ${listaFrutas}\n Laticínios: ${listaLaticinios}\n Congelados: ${listaCongelados}\n Doces: ${listaDoces}`);
 
 </script>
 </html>
