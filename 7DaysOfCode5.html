@@ -39,15 +39,24 @@
 
 		let removerItem = prompt ("Se quiser remover um item, digite 'sim', caso contrário digite 'não'.");
 
-//remoção de ítens 
+			//remoção de ítens 
+		
+		//.indexOf(itemASerRemovido), que retorna a posição desse elemento dentro do array, ou -1, caso não o encontre
+		//.includes(itemASerRemovido) retorna TRUE se o array contem o elemento
+		//let buscaItemASerRemovido = listaFrutas.includes(itemASerRemovido);
 
 		if (removerItem == "sim") {
 
 			alert(`Lista de compras\n Frutas: ${listaFrutas}\n Laticínios: ${listaLaticinios}\n Congelados: ${listaCongelados}\n Doces: ${listaDoces}`);
 
 			let itemASerRemovido = prompt ("Digite o ítem que deseja remover da lista.");
-			let buscaItemASerRemovido = listaFrutas.includes(itemASerRemovido);
-			alert (itemASerRemovido);
+
+			let buscaItemASerRemovido = listaFrutas.indexOf (itemASerRemovido);
+			let removeItemPeloIndice = listaFrutas.splice(buscaItemASerRemovido, 1)
+
+			alert (`O ítem ${itemASerRemovido} foi removido`);
+			alert(`Lista de compras\n Frutas: ${listaFrutas}\n Laticínios: ${listaLaticinios}\n Congelados: ${listaCongelados}\n Doces: ${listaDoces}`);
+
 		}
 
 	}	
