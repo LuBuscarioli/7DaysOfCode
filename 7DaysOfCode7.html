@@ -1,2 +1,56 @@
 <script>
+
+let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtração, multiplicação ou divisão? Se quiser sair, digite 'sair'.");
+
+
+	function soma (valorUm, valorDois) {
+		let resultadoSoma = valorUm + valorDois
+		console.log(resultadoSoma);
+	}
+
+	function subtracao (valorUm, valorDois) {
+		let resultadoSub = valorUm - valorDois
+		console.log(resultadoSub);
+	}
+
+	function multiplicacao (valorUm, valorDois) {
+		let resultadoMult = valorUm * valorDois
+		console.log(resultadoMult);
+	}
+
+	function divisao (valorUm, valorDois) {
+		let resultadoDiv = valorUm / valorDois
+		console.log(resultadoDiv);
+	}
+	
+
+	if (operacao == "soma") {
+		let valorUm = parseInt (prompt ("Digite o primeiro valor a ser calculado")); 
+		let valorDois = parseInt (prompt("Digite o segundo valor a ser calculado"));
+		soma(valorUm, valorDois);
+
+	}else if (operacao == "subtração") {
+		let valorUm = parseInt (prompt ("Digite o primeiro valor a ser calculado")); 
+		let valorDois = parseInt (prompt("Digite o segundo valor a ser calculado"));
+		subtracao(valorUm, valorDois);
+
+	}else if (operacao == "multiplicação") {
+		let valorUm = parseInt (prompt ("Digite o primeiro valor a ser calculado")); 
+		let valorDois = parseInt (prompt("Digite o segundo valor a ser calculado"));
+		multiplicacao (valorUm, valorDois);
+
+	}else if(operacao == "divisão"){
+		let valorUm = parseInt (prompt ("Digite o primeiro valor a ser calculado")); 
+		let valorDois = parseInt (prompt("Digite o segundo valor a ser calculado"));
+		divisao (valorUm, valorDois);
+
+	}else if(operacao == "sair"){
+		alert ("Até logo");
+	}
+	
+
+//	alert ("Até logo");
+	
+
+
 </script>
