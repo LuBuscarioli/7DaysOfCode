@@ -1,6 +1,6 @@
 <script>
 
-let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtração, multiplicação ou divisão? Se quiser sair, digite 'sair'.");
+let operacao = " ";
 
 
 	function soma (valorUm, valorDois) {
@@ -23,6 +23,9 @@ let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtr
 		console.log(resultadoDiv);
 	}
 	
+while (operacao == " ") {
+
+	let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtração, multiplicação ou divisão? Se quiser sair, digite 'sair'.");
 
 	if (operacao == "soma") {
 		let valorUm = parseInt (prompt ("Digite o primeiro valor a ser calculado")); 
@@ -45,11 +48,12 @@ let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtr
 		divisao (valorUm, valorDois);
 
 	}else if(operacao == "sair"){
-		alert ("Até logo");
+		break;
 	}
-	
 
-//	alert ("Até logo");
+}
+
+	alert ("Até logo");
 	
 
 
