@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-Os códigos estão escritos em JS, está com formato HTML somente para ser lido pelo navegador.<br>
-=======
+Estudo de JavaScript criando o jogo Pong no editor p5.JS
 
->>>>>>> 20ea12bd567358ad6c409dcd698dbda08fd16c11
-7 dias de prática de lógica de programação Alura Rafa Ballerini. <br>
-7 dias de desafios sobre lógica de programação envolvendo a linguagem JavaScript.
+Código em JS que usei como estudo é o sketch.js
+
+Para rodar o jogo e ter acesso ao código completo, deve-se clicar no link e expandir a seta a esquerda da página para visualizar: https://editor.p5js.org/buxk/sketches/h7WvjEzTs
+
+Link somente do jogo rodando: https://editor.p5js.org/buxk/full/h7WvjEzTs
