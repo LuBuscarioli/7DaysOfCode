@@ -5,27 +5,27 @@ let operacao = " ";
 
 	function soma (valorUm, valorDois) {
 		let resultadoSoma = valorUm + valorDois
-		console.log(resultadoSoma);
+		alert(resultadoSoma);
 	}
 
 	function subtracao (valorUm, valorDois) {
 		let resultadoSub = valorUm - valorDois
-		console.log(resultadoSub);
+		alert(resultadoSub);
 	}
 
 	function multiplicacao (valorUm, valorDois) {
 		let resultadoMult = valorUm * valorDois
-		console.log(resultadoMult);
+		alert(resultadoMult);
 	}
 
 	function divisao (valorUm, valorDois) {
 		let resultadoDiv = valorUm / valorDois
-		console.log(resultadoDiv);
+		alert(resultadoDiv);
 	}
 	
 while (operacao == " ") {
 
-	let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtração, multiplicação ou divisão? Se quiser sair, digite 'sair'.");
+	let operacao = prompt ("Qual operação matemática deseja realizar? Soma, subtração, multiplicação ou divisão? (Digite o nome da operação corretamente) Se quiser sair, digite 'sair'.");
 
 	if (operacao == "soma") {
 		let valorUm = parseInt (prompt ("Digite o primeiro valor a ser calculado")); 

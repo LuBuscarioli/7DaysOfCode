@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <script>
+	alert("Digite os números 1 ou 2 de acordo com a opção que deseja escolher nas seguintes perguntas.")
 
 	const area = prompt ("Você deseja seguir a área de Front-End (digite 1) ou Back-End? (digite 2)")
 
@@ -17,13 +18,13 @@
 		alert ("Legal, você pode se tornar um Dev Full-Stack!");
 	}
 
-	let linguagensAAprender = prompt ("Tem mais alguma linguagem que gostaria de aprender? Digite 'ok' caso positivo ou 'não' caso negativo.");
-	while (linguagensAAprender === "ok") {
+	let linguagensAAprender = prompt ("Tem mais alguma linguagem que gostaria de aprender? Digite 'sim' caso positivo ou 'não' caso negativo.");
+	while (linguagensAAprender === "sim") {
 
 		let novaLinguagem = prompt ("Digite a linguagem que gostaria de aprender");
 
 		alert (`${novaLinguagem} é muito legal! Siga com os estudos.`)
-		linguagensAAprender = prompt ("Tem mais alguma linguagem que gostaria de aprender? Digite 'ok' caso positivo ou 'não' caso negativo.");
+		linguagensAAprender = prompt ("Tem mais alguma linguagem que gostaria de aprender? Digite 'sim' caso positivo ou 'não' caso negativo.");
 	}
 
 </script>
